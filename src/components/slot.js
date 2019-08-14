@@ -1,16 +1,26 @@
 import React from 'react';
 import EmptySlot from './emptySlot';
+import Form from './form'
 import FilledSlot from './filledSlot';
 
 const Slot = ({ brand, style, size, upcID, status }) => {
-  if (status === 'empty') return <EmptySlot />
-  else if (status === 'filled') {
+
+  if (status === 'filled') {
     return <FilledSlot
       brand={brand}
       style={style}
       size={size}
       upcID={upcID}
     />
+  } else if (status === 'form') {
+    return <Form
+      brand={brand}
+      style={style}
+      size={size}
+      upcID={upcID}
+    />
+  } else {
+    return <EmptySlot />
   }
 }
 

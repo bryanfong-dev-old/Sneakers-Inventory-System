@@ -6,6 +6,10 @@ const FilledSlot = ({ brand, style, size, upcID }) => (
     <p><span className="label">Style : </span>{style}</p>
     <p><span className="label">Size : </span>{size}</p>
     <p><span className="label">UPC ID : </span>{upcID}</p>
+    <div className="buttons">
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
   </div >
 )
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const EmptySlot = () => (
   <div className='empty'>
-    <button>Add</button>
+    <button>Add Shoe</button>
   </div>
 )
 
