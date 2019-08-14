@@ -1,22 +1,28 @@
 import React from 'react';
-import ItemContainer from './ItemContainer'
+import { state } from '../state'
+import Item from '../components/item'
 
-function createItems() {
-  const items = [];
-  for (let i = 1; i <= 10; i++) {
-    items.push(<ItemContainer itemNum={i} />)
+
+class MainContainer extends React.Component {
+
+  render() {
+
+    const items = [];
+    for (let key in state) {
+      items.push(<Item />)
+    }
+
+    // console.log(items);
+    return (
+      <div id="main">
+        <h1>Sneaks Inventory System</h1>
+        <div id="inventory">
+          {items}
+        </div>
+      </div>
+    )
   }
-  return items;
 }
-
-const MainContainer = () => (
-  <div id="main">
-    <h1>Sneaks Inventory System</h1>
-    <div id="inventory">
-      {createItems()}
-    </div>
-  </div>
-)
 
 export default MainContainer;
 
