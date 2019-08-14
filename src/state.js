@@ -4,7 +4,7 @@ export const state = {
     style: 'AJ1 Bred I',
     size: 8.5,
     upcID: 192502195879,
-    status: 'display'
+    status: 'filled'
   },
   1: {
     brand: '',

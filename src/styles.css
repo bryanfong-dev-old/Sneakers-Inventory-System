@@ -22,13 +22,21 @@ h1 {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.item{
+.empty, .filled{
   width: 13em;
   height: 13em;
   margin: 5px;
   padding: 5px;
   border: 1px solid black;
 }
+
+.empty {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .label {
   font-weight: 700;

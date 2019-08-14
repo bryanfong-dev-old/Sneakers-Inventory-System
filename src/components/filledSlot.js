@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Display = ({ brand, style, size, upcID }) => (
-  < div className='item' >
+const FilledSlot = ({ brand, style, size, upcID }) => (
+  <div className='filled' >
     <p><span className="label">Brand : </span>{brand}</p>
     <p><span className="label">Style : </span>{style}</p>
     <p><span className="label">Size : </span>{size}</p>
@@ -9,7 +9,7 @@ const Display = ({ brand, style, size, upcID }) => (
   </div >
 )
 
-export default Display;
+export default FilledSlot;
 
 
 
