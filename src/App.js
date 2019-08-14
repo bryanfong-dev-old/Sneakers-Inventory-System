@@ -1,7 +1,8 @@
 import React from "react";
+import MainContainer from './containers/MainContainer'
 
 const App = () => (
-  <h1>Hello World</h1>
+  <MainContainer />
 )
 
 export default App;
