@@ -8,11 +8,19 @@ class MainContainer extends React.Component {
     super(props);
     this.state = state;
     this.addShoe = this.addShoe.bind(this);
+    this.submitInfo = this.submitInfo.bind(this);
   }
+
   addShoe(index) {
-    console.log('nooo')
     const newState = JSON.parse(JSON.stringify(this.state));
     newState[index]["status"] = 'form';
+    this.setState(newState);
+  }
+
+  submitInfo(e, index) {
+    e.preventDefault();
+    const newState = JSON.parse(JSON.stringify(this.state));
+    newState[index]["status"] = 'filled';
     this.setState(newState);
   }
 
@@ -24,6 +32,7 @@ class MainContainer extends React.Component {
         key={i}
         index={i}
         addShoe={this.addShoe}
+        submitInfo={this.submitInfo}
         {...this.state[key]}
       />)
       i++;

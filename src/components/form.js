@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Form = ({ brand, style, size, upcID }) => (
-  <form className='form'>
+const Form = ({ brand, style, size, upcID, index, submitInfo }) => (
+  <form className='form' onSubmit={(e) => submitInfo(e, index)}>
     <label htmlFor="brand">
       Brand <input id="brand" name="brand" type="text" defaultValue={brand} required />
     </label>
