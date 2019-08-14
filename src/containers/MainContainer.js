@@ -1,18 +1,19 @@
-import React from "react";
+import React from 'react';
+import ItemContainer from './ItemContainer'
 
-function createSlots() {
-  const slots = [];
-  for (let i = 0; i < 10; i++) {
-    slots.push(<div className="item"> Item {i + 1}</div>)
+function createItems() {
+  const items = [];
+  for (let i = 1; i <= 10; i++) {
+    items.push(<ItemContainer itemNum={i} />)
   }
-  return slots;
+  return items;
 }
 
 const MainContainer = () => (
   <div id="main">
     <h1>Sneaks Inventory System</h1>
     <div id="inventory">
-      {createSlots()}
+      {createItems()}
     </div>
   </div>
 )
