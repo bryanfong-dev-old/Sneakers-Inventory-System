@@ -7,11 +7,12 @@ class MainContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = state;
-    this.addShoe = this.addShoe.bind(this);
+    this.editInfo = this.editInfo.bind(this);
     this.submitInfo = this.submitInfo.bind(this);
+    this.deleteInfo = this.deleteInfo.bind(this)
   }
 
-  addShoe(index) {
+  editInfo(index) {
     const newState = JSON.parse(JSON.stringify(this.state));
     newState[index]["status"] = 'form';
     this.setState(newState);
@@ -24,6 +25,12 @@ class MainContainer extends React.Component {
     this.setState(newState);
   }
 
+  deleteInfo(index) {
+    const newState = JSON.parse(JSON.stringify(this.state));
+    newState[index]["status"] = 'empty';
+    this.setState(newState);
+  }
+
   render() {
     const slots = [];
     let i = 0;
@@ -31,8 +38,9 @@ class MainContainer extends React.Component {
       slots.push(<Slot
         key={i}
         index={i}
-        addShoe={this.addShoe}
+        editInfo={this.editInfo}
         submitInfo={this.submitInfo}
+        deleteInfo={this.deleteInfo}
         {...this.state[key]}
       />)
       i++;

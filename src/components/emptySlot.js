@@ -1,8 +1,8 @@
 import React from 'react';
 
-const EmptySlot = ({ addShoe, index }) => (
+const EmptySlot = ({ index, editInfo }) => (
   <div className='empty'>
-    <button onClick={() => addShoe(index)}>Add Shoe</button>
+    <button onClick={() => editInfo(index)}>Add Shoe</button>
   </div >
 )
 
