@@ -1,9 +1,11 @@
 #main{
   margin: 0px auto;
+  margin-bottom: 100px;
   width: 80%;
   display : flex;
   flex-direction: column;
   min-width: 1150px;
+  height: 100%;
 }
 
 h1 {
@@ -12,10 +14,11 @@ h1 {
 }
 
 #inventory {
-  display : flex;
+  display : grid;
+  grid-template-columns: repeat(5, 1fr)
 }
 
-.slot{
+.item{
   text-align: center;
   width: 13em;
   height: 13em;

@@ -2,8 +2,8 @@ import React from "react";
 
 function createSlots() {
   const slots = [];
-  for (let i = 0; i <= 5; i++) {
-    slots.push(<div className="slot"> Box</div>)
+  for (let i = 0; i < 10; i++) {
+    slots.push(<div className="item"> Item {i + 1}</div>)
   }
   return slots;
 }
