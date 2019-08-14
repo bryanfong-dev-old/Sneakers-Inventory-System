@@ -1,9 +1,9 @@
 export const state = {
   0: {
     brand: 'Jordan',
-    style: 'AJ1',
+    style: 'AJ1 Bred I',
     size: 8.5,
-    upcID: 71236712673,
+    upcID: 192502195879,
     status: 'display'
   },
   1: {

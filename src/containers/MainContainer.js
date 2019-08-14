@@ -4,15 +4,16 @@ import Item from '../components/item'
 
 
 class MainContainer extends React.Component {
-
+  constructor(props) {
+    super(props);
+    this.state = state;
+  }
   render() {
-
     const items = [];
-    for (let key in state) {
-      items.push(<Item />)
+    for (let key in this.state) {
+      items.push(<Item {...this.state[key]} />)
     }
 
-    // console.log(items);
     return (
       <div id="main">
         <h1>Sneaks Inventory System</h1>
