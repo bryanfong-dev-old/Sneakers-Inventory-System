@@ -1,16 +1,21 @@
 import React from "react";
 
+function createSlots() {
+  const slots = [];
+  for (let i = 0; i <= 5; i++) {
+    slots.push(<div className="slot"> Box</div>)
+  }
+  return slots;
+}
+
 const MainContainer = () => (
   <div id="main">
     <h1>Sneaks Inventory System</h1>
     <div id="inventory">
-      <div className="slot"> Box1</div>
-      <div className="slot"> Box2</div>
-      <div className="slot"> Box3</div>
-      <div className="slot"> Box4</div>
-      <div className="slot"> Box5</div>
+      {createSlots()}
     </div>
   </div>
 )
 
 export default MainContainer;
+
