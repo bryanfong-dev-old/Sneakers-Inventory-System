@@ -3,7 +3,7 @@ import EmptySlot from './emptySlot';
 import Form from './form'
 import FilledSlot from './filledSlot';
 
-const Slot = ({ brand, style, size, upcID, status, addShoe, i }) => {
+const Slot = ({ brand, style, size, upcID, status, addShoe, index }) => {
   if (status === 'filled') {
     return <FilledSlot
       brand={brand}
@@ -20,7 +20,7 @@ const Slot = ({ brand, style, size, upcID, status, addShoe, i }) => {
     />
   } else {
     return <EmptySlot
-      i={i}
+      index={index}
       addShoe={addShoe}
     />
   }

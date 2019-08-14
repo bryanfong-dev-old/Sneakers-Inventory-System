@@ -9,8 +9,11 @@ class MainContainer extends React.Component {
     this.state = state;
     this.addShoe = this.addShoe.bind(this);
   }
-  addShoe(i) {
-
+  addShoe(index) {
+    console.log('nooo')
+    const newState = JSON.parse(JSON.stringify(this.state));
+    newState[index]["status"] = 'form';
+    this.setState(newState);
   }
 
   render() {
@@ -19,7 +22,7 @@ class MainContainer extends React.Component {
     for (let key in this.state) {
       slots.push(<Slot
         key={i}
-        i={i}
+        index={i}
         addShoe={this.addShoe}
         {...this.state[key]}
       />)
