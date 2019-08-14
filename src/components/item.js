@@ -1,12 +1,17 @@
 import React from 'react';
+import Empty from './empty';
+import Display from './display';
 
-const Item = ({ brand, style, size, upcID, status }) => (
-  < div className='item' >
-    <p><span className="label">Brand : </span>{brand}</p>
-    <p><span className="label">Style : </span>{style}</p>
-    <p><span className="label">Size : </span>{size}</p>
-    <p><span className="label">UPC ID : </span>{upcID}</p>
-  </div >
-)
+const Item = ({ brand, style, size, upcID, status }) => {
+  if (status === 'empty') return <Empty />
+  else if (status === 'display') {
+    return <Display
+      brand={brand}
+      style={style}
+      size={size}
+      upcID={upcID}
+    />
+  }
+}
 
 export default Item;
