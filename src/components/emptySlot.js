@@ -1,9 +1,9 @@
 import React from 'react';
 
-const EmptySlot = () => (
+const EmptySlot = ({ addShoe, i }) => (
   <div className='empty'>
-    <button>Add Shoe</button>
-  </div>
+    <button onClick={() => addShoe(i)}>Add Shoe</button>
+  </div >
 )
 
 export default EmptySlot;

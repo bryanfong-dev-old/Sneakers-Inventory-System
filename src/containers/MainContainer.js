@@ -7,11 +7,23 @@ class MainContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = state;
+    this.addShoe = this.addShoe.bind(this);
   }
+  addShoe(i) {
+
+  }
+
   render() {
     const slots = [];
+    let i = 0;
     for (let key in this.state) {
-      slots.push(<Slot {...this.state[key]} />)
+      slots.push(<Slot
+        key={i}
+        i={i}
+        addShoe={this.addShoe}
+        {...this.state[key]}
+      />)
+      i++;
     }
 
     return (
