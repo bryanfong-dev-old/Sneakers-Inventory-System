@@ -2,10 +2,10 @@ import React from 'react';
 
 const Item = ({ brand, style, size, upcID, status }) => (
   < div className='item' >
-    <p>Brand : {brand}</p>
-    <p>Style : {style}</p>
-    <p>Size : {size}</p>
-    <p>UPC ID : {upcID}</p>
+    <p><span className="label">Brand : </span>{brand}</p>
+    <p><span className="label">Style : </span>{style}</p>
+    <p><span className="label">Size : </span>{size}</p>
+    <p><span className="label">UPC ID : </span>{upcID}</p>
   </div >
 )
 
