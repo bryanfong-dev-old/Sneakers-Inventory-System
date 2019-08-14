@@ -1,0 +1,21 @@
+#main{
+  display : flex;
+  flex-direction: column;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+#inventory {
+  display : flex;
+}
+
+.slot{
+  text-align: center;
+  width: 20%;
+  margin: 5px;
+  border: 1px solid black;
+  height: 12em;
+}
