@@ -1,17 +1,17 @@
 export const state = {
   0: {
     brand: 'Jordan',
-    style: 'AJ1 Bred I',
+    style: 'AJ1 Bred',
     size: 8.5,
     upcID: 192502195879,
     status: 'filled'
   },
   1: {
-    brand: 'test1',
-    style: 'test2',
-    size: 'test3',
-    upcID: 'test4',
-    status: 'form'
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
   },
   2: {
     brand: '',
