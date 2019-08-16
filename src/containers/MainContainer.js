@@ -18,16 +18,28 @@ class MainContainer extends React.Component {
     this.setState(newState);
   }
 
-  submitInfo(e, index) {
+  submitInfo(e, index, brand) {
     e.preventDefault();
     const newState = JSON.parse(JSON.stringify(this.state));
-    newState[index]["status"] = 'filled';
+    newState[index] = {
+      brand: e.target[0].value,
+      style: e.target[1].value,
+      size: e.target[2].value,
+      upcID: e.target[3].value,
+      status: 'filled'
+    }
     this.setState(newState);
   }
 
   deleteInfo(index) {
     const newState = JSON.parse(JSON.stringify(this.state));
-    newState[index]["status"] = 'empty';
+    newState[index] = {
+      brand: '',
+      style: '',
+      size: '',
+      upcID: '',
+      status: 'empty'
+    }
     this.setState(newState);
   }
 
