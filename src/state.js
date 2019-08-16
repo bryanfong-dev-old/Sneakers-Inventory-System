@@ -69,110 +69,110 @@ export const state = {
     upcID: '',
     status: 'empty'
   },
-  // 10: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 11: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 12: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 13: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 14: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 15: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 16: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 17: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 18: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 19: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 20: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 21: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 22: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 23: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // },
-  // 24: {
-  //   brand: '',
-  //   style: '',
-  //   size: '',
-  //   upcID: '',
-  //   status: 'empty'
-  // }
+  10: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  11: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  12: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  13: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  14: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  15: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  16: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  17: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  18: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  19: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  20: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  21: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  22: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  23: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  },
+  24: {
+    brand: '',
+    style: '',
+    size: '',
+    upcID: '',
+    status: 'empty'
+  }
 };
 
