@@ -36,13 +36,18 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('https://tinylink.net/2SCEE');
+  background-image: url('http://tny.im/jia');
   background-size: 100%;
-  transition: transform .5s;
+  background-position: center;
+  transition: background-size .25s ease-in;
+  -moz-transition: background-size .25s ease-in;
+  -ms-transition: background-size .25s ease-in;
+  -o-transition: background-size .25s ease-in;
+  -webkit-transition: background-size .25s ease-in;
 }
 
 .empty:hover {
-  background-size: 120%;
+  background-size: 110%;
   background-position: center;
 }
 
