@@ -60,7 +60,7 @@ class MainContainer extends React.Component {
 
     return (
       <div id="main">
-        <h1>Sneaks Inventory System</h1>
+        <h1>Sneakers Inventory System</h1>
         <div id="inventory">
           {slots}
         </div>
