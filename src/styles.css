@@ -4,7 +4,11 @@
 }
 
 body{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -19,12 +23,18 @@ button, input {
 
 
 #main{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0px auto;
-  display : flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 #inventory {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(5, 13em);
 }
@@ -44,8 +54,14 @@ button, input {
 /***************/
 
 .empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-image: url('./images/stockx_logo.jpg');
   background-size: 110%;
@@ -77,7 +93,12 @@ button, input {
 /***************/
 
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
 }
@@ -104,18 +125,13 @@ input {
   padding: 4px;
 }
 
-.submitButton:hover{
-  border: 4px solid #407e25;
-  background-color: #407e25;
-}
-
 label{
   font-weight: 700;
   color: #182f0e;
 }
 
 /****************/
-/* FIlled Slot  */
+/* Filled Slot  */
 /****************/
 
 .filled {
@@ -139,8 +155,10 @@ h4 {
 }
 
 .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto; 
-  display :flex;
   position: absolute;
   width: calc(100% - 20px);
   left: 0;
@@ -162,17 +180,20 @@ h4 {
   background-color: #509e2f;
 }
 
-.editButton:hover{
-  border: 4px solid #407e25;
-  background-color: #407e25;
-}
-
 .deleteButton{
   border: 4px solid #ff5a5f;
   background-color: #ff5a5f;
 }
 
-.deleteButton:hover{
-  border: 4px solid #e55155;
-  background-color: #e55155;
+/*****************/
+/* Button Hover  */
+/*****************/
+
+.submitButton:hover, button:hover{
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, .45);
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  transform: scale(1.015);
+  -ms-transform: scale(1.015);
+  -webkit-transform: scale(1.015);
 }
