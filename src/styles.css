@@ -119,8 +119,6 @@ label{
 
 .filled {
   position: relative;
-  overflow: scroll;
-  overflow-wrap: break-word;
 }
 
 .buttons {
@@ -153,4 +151,10 @@ label{
   padding: 0;
   margin: 0;
   margin-bottom: 3px;
+}
+
+.info-box {
+  height: calc(100% - 25px);
+  overflow: auto;
+  overflow-wrap: break-word;
 }

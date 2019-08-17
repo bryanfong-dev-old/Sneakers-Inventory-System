@@ -6,7 +6,7 @@ const Form = ({ index, brand, style, size, upcID, submitInfo }) => (
       <label htmlFor="brand"> Brand</label>
       <input id="brand" name="brand" type="text" defaultValue={brand} maxlength="24" />
       <label htmlFor="style"> Style </label>
-      <input id="style" name="style" type="text" defaultValue={style} maxlength="24" />
+      <input id="style" name="style" type="text" defaultValue={style} maxlength="36" />
       <label htmlFor="size"> Size </label>
       <input id="size" name="size" type="text" defaultValue={size} maxlength="10" />
       <label htmlFor="upcID"> UPC ID </label>
