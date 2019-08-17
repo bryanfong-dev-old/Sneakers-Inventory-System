@@ -25,13 +25,13 @@ button, input {
 }
 
 #inventory {
-  display : grid;
-  grid-template-columns: repeat(5, 18em);
+  display: grid;
+  grid-template-columns: repeat(5, 13em);
 }
 
 .empty, .filled, .form{
-  width: 16em;
-  height: 14em;
+  width: 11em;
+  height: 12.5em;
   padding: 10px;
   margin: 5px;
   border: 1px solid black;
@@ -48,7 +48,7 @@ button, input {
   justify-content: center;
   align-items: center;
   background-image: url('./images/stockx_logo.jpg');
-  background-size: 90%;
+  background-size: 110%;
   background-position: center;
   transition: background-size .25s ease-in;
   -moz-transition: background-size .25s ease-in;
@@ -58,7 +58,7 @@ button, input {
 }
 
 .empty:hover {
-  background-size: 100%;
+  background-size: 120%;
 }
 
 .addShoeButton {
@@ -79,6 +79,7 @@ button, input {
 .form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 input {
@@ -95,7 +96,13 @@ input {
   margin: 3px auto 5px auto;
   border: 4px solid #509e2f;
   background-color: #509e2f;
+  position: absolute;
+  width: calc(100% - 20px);
+  left : 0;
+  bottom: 0;
+  right: 0;
 }
+
 
 .submitButton:hover{
   border: 4px solid #407e25;
@@ -111,12 +118,19 @@ label{
 /****************/
 
 .filled {
+  position: relative;
+  overflow: scroll;
   overflow-wrap: break-word;
 }
 
 .buttons {
-  margin: 5px auto; 
+  margin: 0 auto; 
   display :flex;
+  position: absolute;
+  width: calc(100% - 20px);
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .buttons button{
