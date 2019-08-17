@@ -94,23 +94,24 @@ input {
   color: white;
   font-weight: 700;
   margin: 3px auto 5px auto;
-  border: 4px solid #509e2f;
-  background-color: #509e2f;
+  border: 4px solid #515151;
+  background-color: #515151;
   position: absolute;
   width: calc(100% - 20px);
   left : 0;
   bottom: 0;
   right: 0;
+  padding: 4px;
 }
 
-
 .submitButton:hover{
-  border: 4px solid #407e25;
-  background-color: #407e25;
+  border: 4px solid #404040;
+  background-color: #404040;
 }
 
 label{
   font-weight: 700;
+  color: #182f0e;
 }
 
 /****************/
@@ -119,6 +120,22 @@ label{
 
 .filled {
   position: relative;
+}
+
+.info-box {
+  height: calc(100% - 25px);
+  overflow: auto;
+  overflow-wrap: break-word;
+}
+
+.info, h4{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+h4 {
+  color: #182f0e;
 }
 
 .buttons {
@@ -132,29 +149,30 @@ label{
 }
 
 .buttons button{
+  color: white;
   width: 48%;
   margin: 5%;
-  color: white;
   font-weight: 700;
   margin: 3px auto 5px auto;
-  border: 4px solid #509e2f;
-  background-color: #509e2f;
   border-radius: 2.5px;
 }
 
-.buttons button:hover{
+.editButton{
+  border: 4px solid #509e2f;
+  background-color: #509e2f;
+}
+
+.editButton:hover{
   border: 4px solid #407e25;
   background-color: #407e25;
 }
 
-.info, h4{
-  padding: 0;
-  margin: 0;
-  margin-bottom: 3px;
+.deleteButton{
+  border: 4px solid #ff5a5f;
+  background-color: #ff5a5f;
 }
 
-.info-box {
-  height: calc(100% - 25px);
-  overflow: auto;
-  overflow-wrap: break-word;
+.deleteButton:hover{
+  border: 4px solid #e55155;
+  background-color: #e55155;
 }

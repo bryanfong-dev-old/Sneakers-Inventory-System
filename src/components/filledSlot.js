@@ -14,8 +14,8 @@ const FilledSlot = ({ index, brand, style, size, upcID, editInfo, deleteInfo }) 
       <p className="info">{upcID || <br />}</p >
     </div>
     <div className="buttons">
-      <button onClick={() => editInfo(index)}>Edit</button>
-      <button onClick={() => deleteInfo(index)}>Delete</button>
+      <button className="editButton" onClick={() => editInfo(index)}>Edit</button>
+      <button className="deleteButton" onClick={() => deleteInfo(index)}>Delete</button>
     </div>
   </div >
 )
