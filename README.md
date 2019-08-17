@@ -2,6 +2,8 @@
 
 ![image](https://user-images.githubusercontent.com/46798151/63205756-0c35bb80-c077-11e9-834f-b5570018faaa.png)
 
+## To Run the Application
+
 - `npm install` - This will download dependencies
 - `npm start` — This will spawn a development server with a default port of `1234`.
 - `npm run build` — This will output a production build in the `dist` directory.
