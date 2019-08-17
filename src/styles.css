@@ -84,7 +84,7 @@ button, input {
   border: none;
 }
 
-.addShoeButton:focus {
+*:focus {
   outline: none !important;
 }
 
